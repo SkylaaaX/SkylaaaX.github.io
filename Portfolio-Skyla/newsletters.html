@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletters - Skyla Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f10;
+            color: #e6e6e6;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: #7f8c8d;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .back:hover {
+            color: #e6e6e6;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 2rem;
+            color: #e6e6e6;
+        }
+
+        p {
+            margin: 0 0 28px;
+            color: #7f8c8d;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #141416;
+            border-radius: 20px;
+            padding: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .card h2 {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+            color: #e6e6e6;
+        }
+
+        .card p {
+            margin: 0 0 14px;
+            font-size: 0.95rem;
+            color: #7f8c8d;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            background: #682c2c;
+            font-weight: 700;
+            padding: 10px 14px;
+            border-radius: 10px;
+        }
+
+        .card a:hover {
+            filter: brightness(1.12);
+        }
+    </style>
+</head>
+<body>
+    <main class="wrap">
+        <a class="back" href="index.html">← Retour au portfolio</a>
+        <h1>Newsletters</h1>
+        <p>Trois newsletters dédiées aux transformations stratégiques de la VR, du XR et du spatial computing.</p>
+
+        <section class="grid">
+            <article class="card">
+                <h2>La réalité virtuelle entre dans une phase d’industrialisation stratégique</h2>
+                <p>Analyse de la maturité du secteur VR, des investissements et des usages professionnels en expansion.</p>
+                <a href="newsletter-ia-tech.html">Ouvrir</a>
+            </article>
+
+            <article class="card">
+                <h2>Les avancées matérielles redéfinissent l’expérience immersive</h2>
+                <p>Focus sur la miniaturisation des dispositifs et l’impact des innovations hardware sur l’adoption.</p>
+                <a href="newsletter-web-dev.html">Ouvrir</a>
+            </article>
+
+            <article class="card">
+                <h2>La structuration de l’écosystème XR et l’émergence du spatial computing</h2>
+                <p>Lecture stratégique des dynamiques XR, de l’interopérabilité et des nouveaux modèles d’usage immersif.</p>
+                <a href="newsletter-design-ux.html">Ouvrir</a>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

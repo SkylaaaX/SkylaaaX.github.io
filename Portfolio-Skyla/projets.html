@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Skyla Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f10;
+            color: #e6e6e6;
+            min-height: 100vh;
+            padding: 40px 20px 60px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #7f8c8d;
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+
+        a:hover { color: #e6e6e6; }
+
+        .page-header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 16px 0 10px;
+            color: #e6e6e6;
+            font-size: clamp(30px, 5vw, 46px);
+            letter-spacing: -0.5px;
+        }
+
+        .intro {
+            color: #9ca0a3;
+            line-height: 1.65;
+            max-width: 75ch;
+        }
+
+        .projects-layout {
+            display: grid;
+            gap: 28px;
+        }
+
+        .project-card {
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+            gap: 30px;
+            background: linear-gradient(145deg, #151518, #121215);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 22px;
+            padding: 28px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .project-card h2 {
+            margin-bottom: 12px;
+            font-size: clamp(22px, 3.5vw, 32px);
+            color: #e6e6e6;
+        }
+
+        .project-card p {
+            color: #b2b4b8;
+            line-height: 1.72;
+            text-align: justify;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            align-content: start;
+        }
+
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: 14px;
+            background: #0b0b0d;
+            padding: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (max-width: 940px) {
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="page-header">
+            <a href="index.html">← Retour au portfolio</a>
+            <h1>Projets Personnels</h1>
+            <p class="intro">Créativité digitale et immersion technologique se rejoignent ici à travers deux expériences majeures de mon parcours.</p>
+        </header>
+
+        <section class="projects-layout">
+            <article class="project-card">
+                <div>
+                    <h2>Art Digital</h2>
+                    <p>
+                        Au fil de mon parcours en dessin digital, j’ai traversé plusieurs phases d’apprentissage, de remise en question et d’expérimentation qui ont profondément façonné ma manière de créer. J’ai commencé avec des bases assez classiques, en cherchant à transposer mes acquis traditionnels vers le numérique. Très vite, je me suis rendu compte que le dessin digital ne consistait pas simplement à reproduire les techniques académiques sur une tablette graphique, mais qu’il impliquait une compréhension spécifique des outils informatiques, des logiciels et des flux de production. J’ai exploré différentes méthodes de travail, passant du line art structuré avec calques multiples à des approches plus directes en peinture digitale, en travaillant les volumes et la lumière sans esquisse préalable. J’ai dû apprendre à maîtriser la gestion des brosses, des textures, des modes de fusion, ainsi que l’optimisation des fichiers pour différents supports. L’utilisation de logiciels spécialisés m’a confrontée à des problématiques techniques telles que la gestion des résolutions, des profils colorimétriques ou encore l’exportation adaptée aux contraintes web et print. Chaque difficulté rencontrée — qu’il s’agisse de comprendre les dynamiques de perspective, d’améliorer l’anatomie ou de trouver un style cohérent — a été une étape déterminante dans ma progression. Le numérique m’a également permis d’expérimenter rapidement, d’itérer, de corriger, d’oser des compositions plus ambitieuses. Cette capacité d’adaptation constante aux outils et aux méthodes m’a appris à considérer la technologie non pas comme un simple support, mais comme un véritable partenaire créatif.
+                    </p>
+                </div>
+                <div class="gallery gallery--art">
+                    <img src="assets/img/art/The night we met.png" alt="Illustration digitale artistique - The night we met">
+                    <img src="assets/img/art/doodl time.png" alt="Illustration digitale artistique - Doodl time">
+                    <img src="assets/img/art/imaginary hug.png" alt="Illustration digitale artistique - Imaginary hug">
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div>
+                    <h2>VAIL VR & Esport Immersif</h2>
+                    <p>
+                        Dans un second temps, mon immersion dans l’univers de l’esport en réalité virtuelle a représenté un tournant majeur dans mon rapport à la technologie. En tant que joueuse compétitive sur VAIL VR, j’ai découvert un environnement où la performance ne dépend pas uniquement de la précision ou des réflexes, mais aussi d’une compréhension fine des mécaniques VR, de la spatialisation et de la coordination en équipe dans un espace tridimensionnel immersif. L’exigence du haut niveau m’a poussée à analyser les systèmes de jeu en profondeur, à étudier les interactions physiques propres à la VR et à optimiser mon setup matériel pour réduire la latence et améliorer la fluidité des mouvements. Progressivement, mon implication ne s’est pas limitée au jeu compétitif. J’ai eu l’opportunité de contribuer en coulisses, en assistant sur certains aspects techniques, notamment dans l’analyse de bugs et le test des systèmes VR. Le bughunting m’a permis de comprendre la complexité des environnements immersifs, où chaque interaction — collision, tracking, synchronisation réseau — peut générer des comportements inattendus. Participer à l’identification de dysfonctionnements et à l’amélioration de certains systèmes m’a donné une perspective nouvelle sur le développement en réalité virtuelle. J’ai également pu assister sur des aspects liés au code et à la logique des interactions VR, découvrant les contraintes spécifiques liées au tracking des contrôleurs, à la gestion des hitboxes en espace 3D et à l’optimisation des performances pour garantir une expérience stable aux joueurs. Cette double expérience, à la fois compétitive et technique, m’a permis de développer une vision globale du médium : comprendre l’utilisateur tout en appréhendant les limites et les exigences du développement. Aujourd’hui, je considère que cette complémentarité entre créativité digitale et expertise immersive constitue un socle solide pour évoluer dans les industries liées aux technologies interactives.
+                    </p>
+                </div>
+                <div class="gallery gallery--vail">
+                    <img src="assets/img/vail/Fd_nPafXoAMDjrh.jpeg" alt="Action VAIL VR en compétition">
+                    <img src="assets/img/vail/12362768_1641920506062936_4242301862754800399_o.jpg" alt="Équipe et environnement esport VR">
+                    <img src="assets/img/vail/R.jpeg" alt="Capture immersive VAIL VR">
+                    <img src="assets/img/vail/M6Rn8nlalng7IN8SxnBES_Ef_ctOPsfCH9w63HqR--4.webp" alt="Scène de gameplay VAIL VR">
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -102,6 +102,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const hiddenImage = this.querySelector('.hidden-image');
             const hiddenLink = this.querySelector('.hidden-link');
             const displayType = this.querySelector('.hidden-display-type');
+
+            if (this.dataset.navOnClick === 'true' && hiddenLink && hiddenLink.href) {
+                window.location.href = hiddenLink.href;
+                return;
+            }
+
             let combinedDesc = '';
             hiddenDescs.forEach((desc, index) => {
                 if (index > 0) combinedDesc += '\n\n';
